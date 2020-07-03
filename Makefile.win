@@ -4,8 +4,8 @@
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = P3Examen2_PaulinaEuceda.o Object.o
-LINKOBJ  = P3Examen2_PaulinaEuceda.o Object.o
+OBJ      = P3Examen2_PaulinaEuceda.o Object.o Nodo.o Pila.o Matrix.o Operator.o
+LINKOBJ  = P3Examen2_PaulinaEuceda.o Object.o Nodo.o Pila.o Matrix.o Operator.o
 LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
 INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
 CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
@@ -29,3 +29,15 @@ P3Examen2_PaulinaEuceda.o: P3Examen2_PaulinaEuceda.cpp
 
 Object.o: Object.cpp
 	$(CPP) -c Object.cpp -o Object.o $(CXXFLAGS)
+
+Nodo.o: Nodo.cpp
+	$(CPP) -c Nodo.cpp -o Nodo.o $(CXXFLAGS)
+
+Pila.o: Pila.cpp
+	$(CPP) -c Pila.cpp -o Pila.o $(CXXFLAGS)
+
+Matrix.o: Matrix.cpp
+	$(CPP) -c Matrix.cpp -o Matrix.o $(CXXFLAGS)
+
+Operator.o: Operator.cpp
+	$(CPP) -c Operator.cpp -o Operator.o $(CXXFLAGS)
