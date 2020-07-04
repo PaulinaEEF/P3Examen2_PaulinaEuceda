@@ -11,10 +11,12 @@ class Matrix : public Object
 		Matrix(int);
 		
 		int** crearMatriz();
+		void imprimirMatriz();
 		
 		~Matrix();
 	protected:
 		int size;
+		int** matriz;
 };
 
 #endif

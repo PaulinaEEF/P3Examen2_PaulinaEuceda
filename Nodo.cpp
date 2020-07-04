@@ -1,7 +1,8 @@
 #include "Nodo.h"
 
-Nodo::Nodo()
+Nodo::Nodo(Object* ob)
 {
+	data = ob;
 }
 
 Nodo* Nodo::getNext(){

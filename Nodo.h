@@ -6,7 +6,7 @@
 class Nodo
 {
 	public:
-		Nodo();
+		Nodo(Object*);
 		
 		Nodo* getNext();
 		void setNext(Nodo*);

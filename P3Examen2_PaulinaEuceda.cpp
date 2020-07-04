@@ -12,7 +12,7 @@ int main(int argc, char** argv) {
 	int tamanio;
 	string operacion;
 	
-	cin >> operacion;
+	
 	
 	cout<<"Ingrese el tamano de las matrices: ";
 	cin >> tamanio;
@@ -27,6 +27,17 @@ int main(int argc, char** argv) {
 		raiz = sqrt(tamanio);
 	}
 	
+	Matrix* mat1 = new Matrix(raiz);
+	mat1->crearMatriz();
+	Matrix* mat2 = new Matrix(raiz);
+	mat2->crearMatriz();
+	Matrix* mat3 = new Matrix(raiz);
+	mat3->crearMatriz();
+	
+	mat1->imprimirMatriz();
+	mat2->imprimirMatriz();
+	mat3->imprimirMatriz();
+	
 	char operador;
 	cout<<"Ingrese el operador: "<<endl;
 	cin >> operador;
@@ -35,6 +46,14 @@ int main(int argc, char** argv) {
 	cout<<"Ingrese el otro operador: "<<endl;
 	cin >> operador;
 	Object* op2 = new Operator(operador);
+	
+	mat1->imprimirMatriz();
+	cout<<endl;
+	mat2->imprimirMatriz();
+	cout<<endl;
+	mat3->imprimirMatriz();
+	
+	//Nodo* nodo1
 		
 	
 	
